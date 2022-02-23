@@ -43,3 +43,9 @@ print(math.pow(f,g)) #potęgowanie z math
 
 f += 2
 print(f)
+
+q = 5
+w = 3
+r = q-w
+
+print("wynik działania %(z1)d - %(z2)d = %(z3)d" %{'z1':q, 'z2':w, 'z3':r})
