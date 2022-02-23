@@ -49,3 +49,5 @@ w = 3
 r = q-w
 
 print("wynik działania %(z1)d - %(z2)d = %(z3)d" %{'z1':q, 'z2':w, 'z3':r})
+
+print("Wynik działania {0:d} - {1:d} = {2:d}".format(q, w, r))
