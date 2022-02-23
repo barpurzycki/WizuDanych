@@ -1,3 +1,45 @@
 import sys
+import math
 
 print(sys.version)
+
+x = "Inżynieria\nsystemów\ninformatycznych"
+
+print(x)
+print(type(x))
+
+a = 5
+
+print(a)
+print(type(a))
+
+b = 5.3
+
+print(b)
+print(type(b))
+
+c = 6 + 2j
+
+print(c)
+print(type(c))
+
+# to jest komentarz
+
+# Ctrl plus Slash to komentarz
+# # blokowy
+
+d = "Przykład łączenia "
+e = "stringów"
+
+print(d+e)
+
+f = 7
+g = 2
+
+print(f // g) #2 mieści się w 7 trzy razy
+print(f**g) #potęgowanie
+
+print(math.pow(f,g)) #potęgowanie z math
+
+f += 2
+print(f)
