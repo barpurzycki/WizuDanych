@@ -1,3 +1,4 @@
+import math
 e = math.e
 e = pow(e,10)
 print(e)
