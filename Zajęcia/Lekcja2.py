@@ -139,3 +139,6 @@
 # print(lista)
 # lista.reverse()
 # print(lista)
+
+słownik = {'a': '40', 'b': '30', 'c': 'Trzecia wartość'}
+print(słownik['c'])
