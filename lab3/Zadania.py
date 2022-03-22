@@ -64,3 +64,16 @@
 #     return iloczyn
 #
 # print(ciagop(1, 2, 3, 4, 5, 6, 7, 8))
+
+#Zad 8
+
+# def lista(**produkt):
+#     cena=len(produkt.items())
+#     paragon = 0
+#     ileprod = 0
+#     for key, value in produkt.items():
+#         paragon += value
+#         ileprod = len(produkt.keys())
+#     return ileprod, paragon
+# 
+# print(lista(czekolada=5, chipsy=5.5 ))
