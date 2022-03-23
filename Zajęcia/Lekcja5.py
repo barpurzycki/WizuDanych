@@ -1,5 +1,8 @@
 class Kształty():
+    # definicja konstruktora
     def __init__(self, x, y):
+        # deklarujemy atrybuty
+        # self wskazuje że chodzi o zmienne własnie definiowanej klasy
         self.x=x
         self.y=y
         self.opis = "To jest klasa dla ogólnych kształtów"
@@ -17,11 +20,18 @@ class Kształty():
         self.x=self.x * czynnik
         self.y=self.y * czynnik
 #
+#klasa która dziedziczy po klasie Kształty
 # class Kwadrat(Kształty):
 #     def __init__(self, x):
 #         self.x = x
 #         self.y = x
 #
+# i jeszcze klasa, która dziedziczy po klasie Kwadrat
+# bedzie definiwoać figurę złożoną z 3 kwadratów w kształcie litery L
+#
+#  _
+# | |_
+# |_ _|
 #
 # class KwadratLiteraL(Kwadrat):
 #     def obwod(self):
@@ -30,8 +40,10 @@ class Kształty():
 #     def pole(self):
 #         return 3 * self.x * self.y
 #
+# inicjujemy klasę Kwadrat
 # kwadrat = Kwadrat(5)
 #
+# sprawdzenie metod z klasy bazowej
 # print(kwadrat.obwod())
 # print(kwadrat.pole())
 # kwadrat.dodaj_opis("Nasza figura to kwadrat")
@@ -39,6 +51,8 @@ class Kształty():
 # kwadrat.skalowanie(0.3)
 # print(kwadrat.obwod())
 # print("")
+#
+#inicjujemy klasę KwadratLiteraL
 #
 # litera_l = KwadratLiteraL(5)
 # print(litera_l.obwod())
@@ -69,7 +83,10 @@ class Kształty():
 #
 # class Pracownik(Osoba):
 #     def __init__(self, imie, nazwisko, pensja):
+#         wywołanie konstruktora klasy bazowej
 #         Osoba.__init__(self, imie, nazwisko)
+#         lub drugi sposób
+#         super().__init__(imie, nazwisko)
 #         self.pensja = pensja
 #
 #     def przedstaw_sie(self):
@@ -114,11 +131,12 @@ class Kształty():
 imie = "Reks"
 it = iter(imie)
 print(it)
-print(next(it))
-print(next(it))
-print(next(it))
-print(next(it))
-print(next(it))
+# na wyjściu <str_iterator object at 0x000001CEB9A2F6D0>
+print(next(it)) # na wyjściu R
+print(next(it)) # na wyjściu e
+print(next(it)) # na wyjściu k
+print(next(it)) # na wyjściu s
+print(next(it)) # Traceback (most recent call last):
 
 class Wspak:
     def __init__(self, data):
@@ -138,11 +156,11 @@ napis = Wspak('Reks')
 print(napis.__next__())
 for a in napis:
     print(a)
-    
+
 def reverse(data):
     for index in range(len(data)-1, -1, -1):
         yield data[index]
-        
+
 gen = reverse("Feliks")
 print(next(gen))
 print("Marek")
