@@ -36,11 +36,9 @@ print(a*b)
 
 x = np.arange(6).reshape(2,3)
 print(x)
-for a in x:
-    a = np.sin(x)
+a = np.sin(x)
 print(a)
-for b in x:
-    b = np.cos(x)
+b = np.cos(x)
 print(b)
 print(a+b)
 
@@ -68,6 +66,22 @@ print()
 print()
 c = a.ravel()
 print(c)
+print()
+print()
+d = np.arange(81).reshape(3,27)
+print(d)
+print()
+print()
+e = np.arange(81).reshape(27,3)
+print(e)
+print()
+print()
+f = np.arange(81).reshape(1,81)
+print(f)
+print()
+print()
+g = np.arange(81).reshape(81,1)
+print(g)
 
 #Zad 11
 
