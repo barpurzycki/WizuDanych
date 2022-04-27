@@ -34,5 +34,6 @@
 df = pd.read_csv('zamowienia.csv', header=0, sep=';', decimal='.')
 
 grupa = df.groupby('Sprzedawca').agg({'idZamowienia':['count']})
-grupa.plot(kind='bar')
+grupa.plot(kind='bar', rot=30, figsize=(8, 8))
+plt.ylabel('Ilość zamówień')
 plt.show()
