@@ -35,3 +35,14 @@ plt.legend(loc='upper left')
 plt.xlabel("x")
 plt.ylabel("sin(x) i cos(x)")
 plt.show()
+
+#Zad 4
+
+df = pd.read_csv('iris.csv', usecols=['sepal length', 'sepal width'])
+x = []
+x = df['sepal length']
+y = []
+y = df['sepal width']
+z = np.abs(x-y)
+plt.scatter(x, y, c = np.random.randint(0, 150, 150), s = z)
+plt.show()
