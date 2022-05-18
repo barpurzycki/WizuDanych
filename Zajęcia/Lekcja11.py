@@ -127,3 +127,10 @@ ax.set_xlabel('X label')
 ax.set_ylabel('Y label')
 ax.set_zlabel('Z label')
 plt.show()
+
+#wykres siatkowy
+
+ax = fig.add_subplot(1, 2, 2, projection='3d')
+X, Y, Z = get_test_data()
+ax.plot_wireframe(X, Y, Z, rstride=10, cstride=10)
+plt.show()
